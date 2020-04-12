@@ -9,6 +9,7 @@
     http://www.springframework.org/schema/mvc
     http://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
+    <!--  Directly copy pom.xml(oaR_web) to current project , the following import works -->
     <import resource="spring-biz.xml"/>
 
     <context:component-scan base-package="com.example.oaz"/>
@@ -22,11 +23,11 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-<!--    <mvc:interceptors>-->
-<!--        <mvc:interceptor>-->
-<!--            <mvc:mapping path="/**"/>-->
-<!--            <bean class="com.example.oaz.global.LoginInterceptor"/>-->
-<!--        </mvc:interceptor>-->
-<!--    </mvc:interceptors>-->
+    <!--    <mvc:interceptors>-->
+    <!--        <mvc:interceptor>-->
+    <!--            <mvc:mapping path="/**"/>-->
+    <!--            <bean class="com.example.oaz.global.LoginInterceptor"/>-->
+    <!--        </mvc:interceptor>-->
+    <!--    </mvc:interceptors>-->
 
 </beans>
